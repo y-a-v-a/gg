@@ -1,0 +1,96 @@
+<!doctype html>
+<html>
+    <head>
+        <title>ax710.org • y-a-v-a.org</title>
+        <meta description="A search form used for online creative creations">
+        <meta keywords="ax710, y-a-v-a, theinternetunderexposed, theagreeinginternet">
+        <!--
+            This page is created by ax710.org and y-a-v-a.org
+            for the projects http://www.theinternetunderexposed.com and
+            http://www.theagreeinginternet.com (c) 2015 - cc by 3.0 NL
+            
+            This site is by no means related by Google or any
+            of their companies. This page is an artistic representation
+            of the Google home page as it is online as of April 2015.
+        -->
+        <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+        }
+        body {
+            background-image: url('top-right.jpg'), url('bottom-right.jpg'), url('bottom-left.jpg'), url('bottom-wide.jpg');
+            background-position: top right, bottom right, bottom left, bottom left;
+            background-repeat: no-repeat, no-repeat, no-repeat, repeat-x;
+            background-size: auto 52px, auto 41px, auto 41px, auto 41px;
+            position: relative;
+        }
+        form {
+            position: absolute;
+            left: calc(50% - 284px);
+            top: 188px;
+            text-align: center;
+        }
+        img {
+            display: block;
+            margin: 0 auto;
+            padding-left: 18px;
+        }
+        input[name="q"] {
+            width: 568px;
+            height: 24px;
+            margin-top: 17px;
+        }
+        input[type="submit"], input[type="button"] {
+            background-image: url('buttons.jpg');
+            background-position: -3px -7px;
+            border: none;
+            background-color: transparent;
+            color: transparent;
+            background-size: auto 44px;
+            margin: 16px 0 0 0;
+            padding: 0;
+            height: 29px;
+            width: 97px;
+        }
+        input[type="button"] {
+            width: 97px;
+            background-position: -115px -7px;
+        }
+        input:focus {
+            outline: 0;
+        }
+        </style>
+    </head>
+    <body>
+        <form method="GET" action="http://www.google.com/search" target="_blank">
+            <img src="logo.jpg" alt="" width="313" height="107">
+            
+            <input type="text" name="q">
+            <br>
+            <input type="submit" value="Google zoeken">
+            <input type="button" value="Ik doe een gok" onclick="ax710();">
+        </form>
+        <script>
+        var sites = [
+            'http://www.maleglitch.net/',
+            'http://www.googlevich.com/',
+            'http://www.neuropolisn.com/',
+            'http://www.god-is-a-tj.com/',
+            'http://www.fortheloveoffame.com/',
+            'http://www.theagreeinginternet.com/',
+            'http://www.theinternetunderexposed.com/',
+            'http://www.la-trahison-des-images.be/',
+            'http://www.art-is-money.com/',
+            'http://www.i-m-too-sad-to-tell-you.org/',
+            'http://www.l-h-o-o-q.org/'
+        ];
+        function ax710() {
+            var site = sites[Math.floor(Math.random() * sites.length)];
+            window.location = site;
+        }
+        </script>
+    </body>
+</html>
